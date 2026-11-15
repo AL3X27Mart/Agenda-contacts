@@ -1,9 +1,10 @@
 import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("===== AGENDA DE CONTACTOS =====");
+        System.out.println("*****AGENDA DE CONTACTOS*****");
         System.out.println("1. Añadir contacto");
         System.out.println("2. Mostrar contactos");
         System.out.println("3. Buscar contacto");
@@ -12,20 +13,21 @@ public class Main {
 
         int opcion = sc.nextInt();
 
-        if (opcion == 1) {
-            System.out.println("Has seleccionado: Añadir contacto");
-        } else if (opcion == 2) {
-            System.out.println("Has seleccionado: Mostrar contactos");
-        } else if (opcion == 3) {
-            System.out.println("Has seleccionado: Buscar contacto");
-        } else if (opcion == 4) {
-            System.out.println("Has seleccionado: Salir");
-        } else {
-            System.out.println("Opción no válida");
+        switch (opcion) {
+            case 1:
+                System.out.println("Has seleccionado: Añadir contacto");
+                break;
+            case 2:
+                System.out.println("Has seleccionado: Mostrar contactos");
+                break;
+            case 3:
+                System.out.println("Has seleccionado: Buscar contacto");
+                break;
+            case 4:
+                System.out.println("Has seleccionado: Salir");
+                break;
+            default:
+                System.out.println("Opción no válida");
         }
     }
 }
-
-
-
-
